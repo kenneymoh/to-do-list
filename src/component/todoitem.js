@@ -3,8 +3,8 @@ function ToDoItem(){
     return(
         <div>
             <div>
-                <label>Title</label>
                 <h3>Learn about react</h3>
+                <p>lorem ipsum</p>
             </div>
         </div>
         
