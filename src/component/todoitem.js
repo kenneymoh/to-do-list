@@ -1,13 +1,19 @@
-import React from "react";
-function ToDoItem(){
-    return(
-        <div>
-            <div>
-                <h3>Learn about react</h3>
-                <p>lorem ipsum</p>
-            </div>
+import React,{ useState } from "react";
+
+function TodoItem(props){
+ const [task,setTask] = useState(true)
+
+function handleClick(){
+
+   setTask(task =>!task) 
+}
+    return (
+        <div style={{border:"1px solid green"}}>
+            <h2>{props.todo.title}</h2>
+            <p>{props.todo.description}</p>
+            <button onClick={handleClick}>{task ? "Completed":"Incomplete"}</button>
         </div>
-        
     )
 }
-export default ToDoItem;
+
+export default TodoItem

@@ -1,14 +1,17 @@
+import "./App.css";
 
-import './App.css';
-import Home from './views/Home';
-
-
+import UserInfo from "./Biodata";
+import TodoAnalytics from "./views/TodoAnalytics";
+import Home from "./views/home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-    <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/analytics" element={<TodoAnalytics />} />
+      <Route path="/profile" element={<UserInfo />} />
+    </Routes>
   );
 }
 

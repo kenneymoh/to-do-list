@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
-function ToDoAnalytics() {
-  return (
-    <div>ToDoAnalytics</div>
-  )
+function TodoAnalytics() {
+  return <div>Todo analytics</div>;
 }
 
-export default ToDoAnalytics
-
-r
+export default TodoAnalytics;
